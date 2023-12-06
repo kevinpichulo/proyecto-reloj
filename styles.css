@@ -1,0 +1,28 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+ background-color: black;
+ color: aqua;
+ 
+   
+
+    
+}
+h1 {
+    color:     #11e1e1;
+ 
+}
+#reloj {
+    font-size: 90px;
+    border: 8px solid red;
+border-radius: 1000px;
+text-align: center;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from{
+        text-shadow: 0 0 10px yellow, 0 0 20px blue, 0 0 10px orange, 0 0 20px red; 
+    }
+}

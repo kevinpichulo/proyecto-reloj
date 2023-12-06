@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Sona Horaria</h1>
+    <div id="reloj"></div>
+    <script>
+        //funcion para obtener la ora acual en hh:mm:ss
+ const horaActual = () => {
+    var Ahora = new Date ();
+    var Horas = Ahora.getHours().toString().padStart(2, "0");
+    var minutos = Ahora.getMinutes().toString().padStart(2, "0");
+    var segundos = Ahora.getSeconds().toString().padStart(2, "0");
+    return Horas + ":" + minutos + ":" + segundos;
+
+}
+// funcion para actualizar el contenido del reloj
+const actualizarHora = () => {
+    var reloj = document.getElementById("reloj");
+    reloj.textContent = horaActual();
+
+}
+setInterval(actualizarHora,1000)
+// iniciar el reloj al cargar la paguina
+actualizarHora();
+
+    </script>
+        
+</body>
+</html>
